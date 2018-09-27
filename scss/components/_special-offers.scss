@@ -1,0 +1,57 @@
+.special-offers {
+  padding: 5.6rem 0 6.4rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 82.5rem;
+    height: 36rem;
+    text-align: center;
+    vertical-align: middle;
+
+    &_1 {
+      padding-top: 5.7rem;
+      background: url("../image/special_offers/pink_bg.png") no-repeat;
+    }
+
+    &_2 {
+      padding-top: 5.5rem;
+      background: url("../image/special_offers/bl_bg.png") no-repeat;
+    }
+  }
+
+  &__heading {
+    font-size: 10.6rem;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+  }
+
+  &__button {
+    background: #feecec;
+    color: #5c5858;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  &__slogan {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
+    margin-top: -2rem;
+  }
+
+  &__link {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+  }
+}

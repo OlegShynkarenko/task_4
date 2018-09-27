@@ -1,0 +1,33 @@
+.footer {
+  padding: 5rem 0 5rem 0;
+
+  &__container {
+    max-width: 108rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-shop-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    line-height: 2.5rem;
+  }
+
+  &__logo-shop-type {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+    margin-bottom: 4.5rem;
+  }
+
+   &__payment-system-icon {
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+
+}

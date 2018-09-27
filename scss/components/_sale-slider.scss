@@ -1,0 +1,35 @@
+.sale-slider {
+  position: relative;
+  min-height: 87rem;
+  background: url("../image/sale_slider/sai-de-silva-41032-unsplash.png");
+
+  &__slide-active {
+    position: absolute;
+    top: 22rem;
+    left: 40rem;
+  }
+
+  &__sale {
+    display: block;
+    font-size: 21rem;
+    font-weight: 600;
+    color: #000;
+    height: 24rem;
+  }
+
+  &__description {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__slider-navigation {
+    position: absolute;
+    left: 92rem;
+    bottom: 5rem;
+  }
+}
+
+
+
+

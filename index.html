@@ -12,29 +12,29 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__header-contacts">
+        <i class="fa fa-phone fa-2x"></i>
+        <p class="header__phone-number">+99 (0) 101 0000 888</p>
+        <i class="fa fa-envelope fa-2x"></i>
+        <p class="header__email-contact">info@yourdomain.com</p>
+      </div>
       <div class="header__container container">
-        <div class="header__header-contacts">
-          <p class="header__phone-number"><i class="fa fa-phone"></i>+99 (0) 101 0000 888</p>
-          <p class="header__email-contact"><i class="fa fa-envelope"></i>info@yourdomain.com</p>
-        </div>
         <nav class="header__navigation">
-          <p class="header__navigation-logo">
-            <a class="header__logo-link link" href="#">
+          <a class="header__logo-link link" href="#">
               <span class="header__logo-shop-name">Fashion Shop</span>
-              <span class="header-log-shop-type">Boutique</span>
-            </a>
-          </p>
+              <span class="header__logo-shop-type">Boutique</span>
+          </a>
           <ul class="header__navbar">
-            <li class="header_navbar-item list"><a class="header__navbar-link link" href="#">Home</a></li>
-            <li class="header_navbar-item list"><a class="header__navbar-link link" href="#">Shop</a></li>
-            <li class="header_navbar-item list"><a class="header__navbar-link link" href="#">Blog</a></li>
-            <li class="header_navbar-item list"><a class="header__navbar-link link" href="#">About Us</a></li>
-            <li class="header_navbar-item list"><a class="header__navbar-link link" href="#">Contact us</a></li>
+            <li class="header__navbar-item list"><a class="header__navbar-link link" href="#">Home</a></li>
+            <li class="header__navbar-item list"><a class="header__navbar-link link" href="#">Shop</a></li>
+            <li class="header__navbar-item list"><a class="header__navbar-link link" href="#">Blog</a></li>
+            <li class="header__navbar-item list"><a class="header__navbar-link link" href="#">About Us</a></li>
+            <li class="header__navbar-item list"><a class="header__navbar-link link" href="#">Contact us</a></li>
           </ul>
           <ul class="header__controls">
-            <li class="header__controls-item list"><a href="#"><i class="fa fa-user"></i></a></li>
-            <li class="header__controls-item list"><a href="#"><i class="fa fa-search"></i></a></li>
-            <li class="header__controls-item list"><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+            <li class="header__controls-item list"><a class="header__controls-link" href="#"><i class="fa fa-user fa-2x"></i></a></li>
+            <li class="header__controls-item list header__controls-item_mod"><a class="header__controls-link" href="#"><i class="fa fa-search fa-2x"></i></a></li>
+            <li class="header__controls-item list"><a class="header__controls-link" href="#"><i class="fa fa-shopping-bag fa-2x"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -42,18 +42,24 @@
     <main>
       <section class="sale-slider">
         <section class="sale-slider__slide"></section>
-        <section class="sale-slider__slide"></section>
+        <section class="sale-slider__slide sale-slider__slide-active">
+          <span class="sale-slider__sale">Sale</span>
+          <span class="sale-slider__description">Up to 50% Off</span>
+        </section>
         <section class="sale-slider__slide"></section>
         <div class="sale-slider__slider-navigation">
-          <a class="sale-slider__nav-item link" href="#"></a>
-          <a class="sale-slider__nav-item link" href="#"></a>
-          <a class="sale-slider__nav-item link" href="#"></a>
+          <a class="sale-slider__nav-item link" href="#"><img src="image/sale_slider/circle_transp.png"
+           alt="slider switcher dot"></a>
+          <a class="sale-slider__nav-item link" href="#"><img src="image/sale_slider/circle.png" alt="slider switcher dot"></a>
+          <a class="sale-slider__nav-item link" href="#"><img src="image/sale_slider/circle_transp.png"
+           alt="slider switcher dot"></a>
         </div>
       </section>
       <section class="sale-products">
+        <h2 class="sale-products__heading">Sale Products</h2>
         <div class="sale-products__container container">
           <div class="sale-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="sale-products__image" src="image/sale_products/1.png" alt="photo of the sale item">
             <div class="sale__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -61,12 +67,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="sale-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="sale-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="sale-products__product-price price">$30.50</b>
             <button class="sale-products__button button">add to cart</button>
           </div>
           <div class="sale-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="sale-products__image" src="image/sale_products/2.png" alt="photo of the sale item">
             <div class="sale__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -74,12 +80,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="sale-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="sale-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="sale-products__product-price price">$30.50</b>
             <button class="sale-products__button button">add to cart</button>
           </div>
           <div class="sale-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="sale-products__image" src="image/sale_products/3.png" alt="photo of the sale item">
             <div class="sale__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -87,12 +93,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="sale-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="sale-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="sale-products__product-price price">$30.50</b>
             <button class="sale-products__button button">add to cart</button>
           </div>
           <div class="sale-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="sale-products__image" src="image/sale_products/4.png" alt="photo of the sale item">
             <div class="sale__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -100,7 +106,7 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="sale-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="sale-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="sale-products__product-price price">$30.50</b>
             <button class="sale-products__button button">add to cart</button>
           </div>
@@ -108,13 +114,13 @@
       </section>
       <section class="special-offers">
         <div class="special-offers__container container">
-          <div class="special-offers__item">
-            <button class="special-offers__button">sale up to</button>
+          <div class="special-offers__item special-offers__item_1">
+            <button class="special-offers__button button">sale up to</button>
             <h2 class="special-offers__heading">Kemeks</h2>
             <span class="special-offers__slogan">be cool</span>
             <a class="special-offers__link link">detail more</a>
           </div>
-          <div class="special-offers__item">
+          <div class="special-offers__item special-offers__item_2">
             <h2 class="special-offers__heading">40%</h2>
             <span class="special-offers__slogan">off everything</span>
             <a class="special-offers__link link">shop now</a>
@@ -122,11 +128,11 @@
         </div>
       </section>
       <section class="day-offer">
-        <div class="day-offer__item">
+        <div class="day-offer__item day-offer__item_1">
           <div class="day-offer__promo">Sale</div>
-          <h2 class="day-offer__promo">Deal of the Day<br>30% on Dresses</h2>
+          <h2 class="day-offer__promo-heading">Deal of the Day<br>30% on Dresses</h2>
           <p class="day-offer__item-name">Pretty Thing floral Skater Dress</p>
-          <b class="day-offer__price"></b>
+          <b class="day-offer__price">$28.00</b>
           <ul class="day-offer__period-list">
             <li class="day-offer__list-item list">
               <span class="day-offer__list-time">37</span>
@@ -145,17 +151,17 @@
               <span class="day-offer__list-text">seconds</span>
             </li>
           </ul>
-          <button class="day-offer__button button"></button>
+          <button class="day-offer__button button">Add to Cart</button>
         </div>
         <div class="day-offer__item">
-          <img class="day-offer__image" src="#" alt="day offer image">
+          <img class="day-offer__image" src="image/day_offer/day_offer_img.png" alt="day offer image">
         </div>
       </section>
       <section class="featured-products">
+        <h2 class="featured-products__heading">Featured Products</h2>
         <div class="featured-products__container container">
-          <h2 class="featured-products__heading">Featured Products</h2>
-          <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
+          <div class="featured-products__item featured-products__item_mod">
+            <img class="featured-products__image" src="image/featured_products/1.png" alt="photo of the sale item">
             <div class="featured-products__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -163,12 +169,51 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
+            <b class="featured-products__product-price price">$30.50</b>
+            <button class="featured-products__button button">add to cart</button>
+          </div>
+          <div class="featured-products__item featured-products__item_mod">
+            <img class="featured-products__image" src="image/featured_products/2.png" alt="photo of the sale item">
+            <div class="featured-products__five-stars">
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+            </div>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
+            <b class="featured-products__product-price price">$30.50</b>
+            <button class="featured-products__button button">add to cart</button>
+          </div>
+          <div class="featured-products__item featured-products__item_mod">
+            <img class="featured-products__image" src="image/featured_products/3.png" alt="photo of the sale item">
+            <div class="featured-products__five-stars">
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+            </div>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
+            <b class="featured-products__product-price price">$30.50</b>
+            <button class="featured-products__button button">add to cart</button>
+          </div>
+          <div class="featured-products__item featured-products__item_mod">
+            <img class="featured-products__image" src="image/featured_products/4.png" alt="photo of the sale item">
+            <div class="featured-products__five-stars">
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+            </div>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="featured-products__product-price price">$30.50</b>
             <button class="featured-products__button button">add to cart</button>
           </div>
           <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="featured-products__image" src="image/featured_products/5.png" alt="photo of the sale item">
             <div class="featured-products__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -176,12 +221,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="featured-products__product-price price">$30.50</b>
             <button class="featured-products__button button">add to cart</button>
           </div>
           <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="featured-products__image" src="image/featured_products/6.png" alt="photo of the sale item">
             <div class="featured-products__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -189,12 +234,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="featured-products__product-price price">$30.50</b>
             <button class="featured-products__button button">add to cart</button>
           </div>
           <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="featured-products__image" src="image/featured_products/7.png" alt="photo of the sale item">
             <div class="featured-products__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -202,12 +247,12 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="featured-products__product-price price">$30.50</b>
             <button class="featured-products__button button">add to cart</button>
           </div>
           <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
+            <img class="featured-products__image" src="image/featured_products/8.png" alt="photo of the sale item">
             <div class="featured-products__five-stars">
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -215,46 +260,7 @@
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
               <span><i class="fa fa-star" aria-hidden="true"></i></span>
             </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
-            <b class="featured-products__product-price price">$30.50</b>
-            <button class="featured-products__button button">add to cart</button>
-          </div>
-          <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
-            <div class="featured-products__five-stars">
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-            </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
-            <b class="featured-products__product-price price">$30.50</b>
-            <button class="featured-products__button button">add to cart</button>
-          </div>
-          <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
-            <div class="featured-products__five-stars">
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-            </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
-            <b class="featured-products__product-price price">$30.50</b>
-            <button class="featured-products__button button">add to cart</button>
-          </div>
-          <div class="featured-products__item">
-            <img src="#" alt="photo of the sale item">
-            <div class="featured-products__five-stars">
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span><i class="fa fa-star" aria-hidden="true"></i></span>
-            </div>
-            <p class="featured-products__product-description text">Embroidered Linen Shirt</p>
+            <p class="featured-products__product-description product-description__text">Embroidered Linen Shirt</p>
             <b class="featured-products__product-price price">$30.50</b>
             <button class="featured-products__button button">add to cart</button>
           </div>
@@ -268,22 +274,32 @@
         </div>
       </section>
       <section class="photo-gallery">
-        <h2 class="photo-gallery__photo">Fashionshop</h2>
+        <p class="photo-gallery__photo"><img src="image/photo_gallery/%23fashionshop.png"></p>
         <p class="photo-gallery__description">Tag your photo for a chance to be featured in our instagram</p>
         <div class="photo-gallery__photos">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
-          <img class="photo-gallery__item" src="#" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/1.png" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/2.png" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/3.png" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/4.png" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/5.png" alt="photo gallery image">
+          <img class="photo-gallery__item" src="image/photo_gallery/6.png" alt="photo gallery image">
         </div>
       </section>
       <section class="features">
-        <div class="features__container container">
+        <div class="features__item">
+          <img class="features__item-icon" src="image/features/money_icon.png" alt="money icon">
           <h3 class="features__heading heading">Money Back Guarantee</h3>
+        </div>
+        <div class="features__item">
+          <img class="features__item-icon" src="image/features/diamond_icon.png" alt="diamond icon">
           <h3 class="features__heading heading">Product Quality</h3>
+        </div>
+        <div class="features__item">
+          <img class="features__item-icon" src="image/features/plane.png" alt="plane icon">
           <h3 class="features__heading heading">Fast Shipping</h3>
+        </div>
+        <div class="features__item">
+          <img class="features__item-icon" src="image/features/headphones_icon.png" alt="headphones icon">
           <h3 class="features__heading heading">Online Support</h3>
         </div>
       </section>
@@ -292,7 +308,7 @@
         <p class="subscribe-form__description">Get updated on new product releases and promotions</p>
         <form class="subscribe-form__form" action="#">
           <label for="email"></label>
-          <input type="email" id="email">
+          <input class="subscribe-form__input-field" type="email" id="email" placeholder="Email Address">
           <button class="subscribe-form__button button" type="submit">Submit</button>
         </form>
       </section>
@@ -300,13 +316,13 @@
         <div class="footer__container container">
           <div class="footer__copyright">
             <div class="footer__copyright-item">
-              <span class="header__logo-shop-name">Fashion Shop</span>
-              <span class="header-log-shop-type">Boutique</span>
+              <span class="footer__logo-shop-name">Fashion Shop</span>
+              <span class="footer__logo-shop-type">Boutique</span>
             </div>
             <div class="footer__copyright-item">
-              <img src="#" alt="mastercard log">
-              <img src="#" alt="pay pal logo">
-              <img src="#" alt="visa logo">
+              <img class="footer__payment-system-icon" src="image/footer/mastercard_icon.png" alt="mastercard log">
+              <img class="footer__payment-system-icon" src="image/footer/paypal_icon.png" alt="pay pal logo">
+              <img class="footer__payment-system-icon" src="image/footer/visa_icon.png" alt="visa logo">
             </div>
             <p class="footer__copyright-item">© 2018
               <span class="footer__copyright-site-dev-name">ARTBEES</span>
@@ -316,27 +332,27 @@
           <div class="footer__support">
             <h3 class="footer__support-heading heading">Customer service</h3>
             <ul class="footer__support-list">
-              <li class="footer__support-list-item"><a class="link" href="#">About Us</a></li>
-              <li class="footer__support-list-item"><a class="link" href="#">F.A.Q.</a></li>
-              <li class="footer__support-list-item"><a class="link" href="#">My Account</a></li>
-              <li class="footer__support-list-item"><a class="link" href="#">Contact Us</a></li>
+              <li class="footer__support-list-item list"><a class="link" href="#">About Us</a></li>
+              <li class="footer__support-list-item list"><a class="link" href="#">F.A.Q.</a></li>
+              <li class="footer__support-list-item list"><a class="link" href="#">My Account</a></li>
+              <li class="footer__support-list-item list"><a class="link" href="#">Contact Us</a></li>
             </ul>
           </div>
           <div class="footer__social">
             <h3 class="footer__social-heading heading">Social</h3>
             <ul class="footer__social-list">
-              <li class="footer__social-list-item"><a class="link" href="#">Instagram</a></li>
-              <li class="footer__social-list-item"><a class="link" href="#">Twitter</a></li>
-              <li class="footer__social-list-item"><a class="link" href="#">Facebook</a></li>
-              <li class="footer__social-list-item"><a class="link" href="#">Pinterest</a></li>
+              <li class="footer__social-list-item list"><a class="link" href="#">Instagram</a></li>
+              <li class="footer__social-list-item list"><a class="link" href="#">Twitter</a></li>
+              <li class="footer__social-list-item list"><a class="link" href="#">Facebook</a></li>
+              <li class="footer__social-list-item list"><a class="link" href="#">Pinterest</a></li>
             </ul>
           </div>
           <div class="footer__contacts">
             <h3 class="footer__social-heading heading">Contacts</h3>
             <ul class="footer__contacts-list">
-              <li class="footer__contacts-list-item"><a class="link" href="#">Patricia C. Amedee 4401</a></li>
-              <li class="footer__contacts-list-item"><a class="link" href="#">+99 (0) 101 0000 888</a></li>
-              <li class="footer__contacts-list-item"><a class="link" href="#">info@yourdomain.com</a></li>
+              <li class="footer__contacts-list-item list"><a class="link" href="#">Patricia C. Amedee 4401</a></li>
+              <li class="footer__contacts-list-item list"><a class="link" href="#">+99 (0) 101 0000 888</a></li>
+              <li class="footer__contacts-list-item list"><a class="link" href="#">info@yourdomain.com</a></li>
             </ul>
           </div>
         </div>

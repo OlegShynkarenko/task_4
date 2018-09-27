@@ -1,0 +1,23 @@
+.sale-products {
+  padding: 4.2rem 0 5.6rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 10.5rem;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__image {
+    margin-bottom: 2.5rem;
+  }
+}

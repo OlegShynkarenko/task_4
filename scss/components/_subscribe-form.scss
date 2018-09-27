@@ -1,0 +1,44 @@
+.subscribe-form {
+  padding: 9rem 0 9rem 0;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 4.8rem;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 6rem;
+  }
+
+  &__input-field {
+    width: 36rem;
+    height: 5rem;
+    border: 1px solid #000;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+
+    &::placeholder {
+      color: #000;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    width: 15rem;
+    height: 5.4rem;
+    color: #000;
+    font-weight: 700;
+    background: #ebb51f;
+  }
+}

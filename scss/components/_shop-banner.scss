@@ -1,0 +1,44 @@
+.shop-banner {
+  padding: 2.9rem 0 8rem 0;
+
+  &__container {
+    background: url("../image/shop_banner/bg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170rem;
+    height: 40rem;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+    color: #fff;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: -2rem 0 1rem 0;
+    word-spacing: 0.4rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    word-spacing: 0.6rem;
+  }
+
+  &__button {
+    height: 4.3rem;
+    width: 24.7rem;
+    background: #ffff00;
+    color: #000;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    margin-top: 2.4rem;
+  }
+}
