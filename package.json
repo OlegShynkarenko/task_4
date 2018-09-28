@@ -34,5 +34,9 @@
     "hooks": {
       "pre-commit": "lint-staged && npm run prettify-scss"
     }
-  }
+  },
+  "*.html": [
+    "js-beautify -s 2 -w 80 -r",
+    "git add"
+  ]
 }

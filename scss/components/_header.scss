@@ -56,6 +56,13 @@
     letter-spacing: 0.2rem;
   }
 
+  &__navbar-link:hover,
+  &__controls-link:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+  }
+
+
   &__controls {
     padding-right: 1.5rem;
   }
