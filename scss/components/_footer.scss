@@ -1,10 +1,11 @@
 .footer {
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0 3rem 0;
 
   &__container {
     max-width: 108rem;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   &__logo-shop-name {
@@ -21,13 +22,57 @@
     color: #000;
     text-transform: uppercase;
     line-height: 1.3rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
   }
 
-   &__payment-system-icon {
+  &__copyright-item_mod {
+    margin-bottom: 10rem;
+  }
+
+  &__payment-system-icon {
     margin-right: 1rem;
     vertical-align: middle;
   }
 
+  &__copyright-item_author {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  &__copyright-site-dev-name {
+    text-transform: uppercase;
+  }
+
+  &__copyright-text {
+    text-transform: capitalize;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+  }
+
+  &__support-list,
+  &__social-list,
+  &__contacts-list {
+    padding: 0;
+  }
+
+  &__support {
+    margin-left: -10rem;
+  }
+
+  &__social {
+    margin-left: -10rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888888;
+  }
 
 }
