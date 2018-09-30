@@ -7,7 +7,7 @@
   }
 
   &__item {
-    width: 82.5rem;
+    width: 50%;
     height: 36rem;
     text-align: center;
     vertical-align: middle;
@@ -58,5 +58,30 @@
   &__link:hover {
     color: #f4f4f4;
     border-bottom: 2px solid #f4f4f4;
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      width: 80%;
+
+    }
+  }
+
+  @media screen and (max-width: $small-break-point) {
+
+    &__item {
+      height: 100%;
+      padding-bottom: 5.5rem;
+    }
+
+    &__heading {
+      font-size: 7rem;
+    }
   }
 }

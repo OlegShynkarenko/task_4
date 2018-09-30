@@ -10,6 +10,7 @@
   &__item-1 {
     background: url("../image/day_offer/left_part_bg.png");
     padding: 12.7rem 0 14rem 39rem;
+    background-size: 100%;
   }
 
   &__image {
@@ -82,4 +83,35 @@
     width: 21.5rem;
     font-size: 1.6rem;
   }
+
+  @media screen and (max-width: $medium-break-point) {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    &__item-1 {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 5rem 0 5rem 0;
+    }
+
+    &__item-2,
+    &__image {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__period-list {
+      width: 50%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+
+    &__promo {
+      width: 50%;
+      height: auto;
+    }
+  }
 }
+

@@ -1,5 +1,6 @@
 .header {
   padding: 2.2rem 0 2.2rem 0;
+  margin: 0 auto;
 
   &__header-contacts {
     padding: 0 0 2rem 10.3rem;
@@ -11,7 +12,7 @@
     display: inline-block;
     font-size: 1.4rem;
     font-weight: 400;
-    margin: 0 1rem 0 1rem;
+    margin: 0 2rem 0 1rem;
   }
 
   &__navigation {
@@ -62,7 +63,6 @@
     border-bottom: 2px solid #000;
   }
 
-
   &__controls {
     padding-right: 1.5rem;
   }
@@ -75,5 +75,42 @@
 
   &__controls-link {
     color: #000;
+  }
+
+  @media screen and (max-width: $small-break-point) {
+
+    &__navigation {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    &__logo-shop-name {
+      font-size: 4rem;
+    }
+
+    &__logo-shop-type {
+      font-size: 2rem;
+    }
+
+    &__logo-link {
+      margin-bottom: 2rem;
+    }
+
+    &__navbar {
+      text-align: center;
+      padding: 0;
+    }
+
+    &__navbar-item {
+      display: block;
+      margin-bottom: 4rem;
+    }
+
+    &__controls {
+      padding: 0;
+    }
   }
 }

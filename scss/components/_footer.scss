@@ -82,4 +82,35 @@
   &__contacts-image {
     margin-right: 1rem;
   }
+
+  @media screen and (max-width: $small-break-point) {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__copyright-item {
+      text-align: center;
+    }
+
+    &__copyright-payment-icons {
+      margin: 0 auto 2rem;
+    }
+
+    &__support,
+    &__social {
+      margin-left: 0;
+    }
+
+    &__contacts {
+      text-align: center;
+    }
+
+    &__support-list,
+    &__social-list,
+    &__contacts-list {
+      text-align: center;
+    }
+  }
 }

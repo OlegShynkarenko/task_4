@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__heading {
@@ -19,5 +20,17 @@
 
   &__image {
     margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: $small-break-point) {
+    text-align: center;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__heading {
+      margin: 0 auto;
+    }
   }
 }

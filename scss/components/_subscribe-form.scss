@@ -41,4 +41,19 @@
     font-weight: 700;
     background: #ebb51f;
   }
+  
+  @media screen and (max-width: $small-break-point) {
+    text-align: center;
+
+    &__input-field {
+      width: 90%;
+    }
+
+    &__button {
+      display: block;
+      margin: 1rem auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

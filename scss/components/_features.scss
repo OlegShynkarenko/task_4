@@ -1,6 +1,7 @@
 .features {
   padding: 5rem 0 5rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   &__item {
@@ -12,5 +13,13 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  @media screen and (max-width: $small-break-point) {
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 4rem;
+    }
   }
 }

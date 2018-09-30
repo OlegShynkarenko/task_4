@@ -25,4 +25,16 @@
   &__item-top {
     margin-bottom: 4.8rem;
   }
+
+  @media screen and (max-width: $small-break-point) {
+    text-align: center;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__heading {
+      margin-left: 0;
+    }
+  }
 }
