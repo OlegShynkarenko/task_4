@@ -28,15 +28,19 @@
     "*.{js,json,css,md}": [
       "prettier --write",
       "git add"
+    ],
+    "*.html": [
+      "js-beautify -s 2 -w 80 -r",
+      "git add"
+    ],
+    "*{/*.scss,/*/*.scss}": [
+      "prettier --write",
+      "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run prettify-scss"
+      "pre-commit": "lint-staged"
     }
-  },
-  "*.html": [
-    "js-beautify -s 2 -w 80 -r",
-    "git add"
-  ]
+  }
 }
