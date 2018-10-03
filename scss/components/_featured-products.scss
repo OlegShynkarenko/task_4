@@ -1,0 +1,40 @@
+.featured-products {
+  padding: 6rem 0 2.9rem 0;
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 10.3rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__image {
+    margin-bottom: 2.5rem;
+  }
+
+  &__item-top {
+    margin-bottom: 4.8rem;
+  }
+
+  @media screen and (max-width: $small-break-point) {
+    text-align: center;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__heading {
+      margin-left: 0;
+    }
+  }
+}

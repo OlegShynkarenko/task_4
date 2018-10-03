@@ -1,0 +1,116 @@
+.day-offer {
+  padding: 6.4rem 0 10.4rem 0;
+  display: flex;
+  overflow: hidden;
+
+  &__item {
+    width: 50%;
+  }
+
+  &__item-1 {
+    background: url("../image/day_offer/left_part_bg.png");
+    padding: 12.7rem 0 14rem 39rem;
+    background-size: 100%;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__promo {
+    display: inline-block;
+    background-color: #c8c290;
+    padding: 1.2rem 0 0 0.5rem;
+    height: 8rem;
+    width: 21rem;
+    text-align: center;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5rem;
+    color: #fff;
+  }
+
+  &__promo-heading {
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+  }
+
+  &__item-name {
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &__price {
+    font-size: 5.1rem;
+    font-weight: bold;
+  }
+
+  &__period-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__list-item {
+    background: url("../image/day_offer/sq.png");
+    padding: 2rem 3rem 2rem 3rem;
+  }
+
+  &__list-time,
+  &__list-text {
+    display: block;
+    text-align: center;
+  }
+
+  &__list-time {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1.1rem;
+  }
+
+  &__list-text {
+    font-size: 1.2rem;
+  }
+
+  &__button {
+    margin-top: 6rem;
+    background: #eaac00;
+    height: 6.5rem;
+    width: 21.5rem;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: $medium-break-point) {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    &__item-1 {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 5rem 0 5rem 0;
+    }
+
+    &__item-2,
+    &__image {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__period-list {
+      width: 50%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+
+    &__promo {
+      width: 50%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.sale-slider {
+  display: flex;
+  position: relative;
+  max-height: 87rem;
+  overflow: hidden;
+
+  &__slide-active {
+    position: relative;
+    width: 100%;
+  }
+
+  &__slide-text {
+    position: absolute;
+    top: 31%;
+    left: 20%;
+  }
+
+  &__sale {
+    font-size: 21rem;
+    line-height: 21rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__description {
+    display: block;
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__slider-navigation {
+    position: absolute;
+    left: 49%;
+    bottom: 5%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1040px) {
+    &__slide-text {
+      top: 0;
+      left: 30%;
+    }
+
+    &__sale {
+      font-size: 15rem;
+      color: #fff;
+      opacity: 0.6;
+    }
+
+    &__description {
+      font-size: 4rem;
+      line-height: 4rem;
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  @media screen and (max-width: $small-break-point) {
+    display: none;
+  }
+}
